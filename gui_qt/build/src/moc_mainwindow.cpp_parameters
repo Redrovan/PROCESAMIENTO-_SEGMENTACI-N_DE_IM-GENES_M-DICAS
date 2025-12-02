@@ -1,0 +1,17 @@
+-I/home/robinson/proyecto_interciclo_cpp/gui_qt/build/ITKFactoryRegistration
+-I/usr/include
+-I/usr/lib/x86_64-linux-gnu/include
+-I/usr/include/hdf5/serial
+-I/usr/include
+-I/usr/include/gdcm-3.0
+-I/usr/include/ITK-5.3
+-I/home/robinson/proyecto_interciclo_cpp/gui_qt/src
+-I/home/robinson/proyecto_interciclo_cpp/gui_qt/../src
+-I/home/robinson/proyecto_interciclo_cpp/gui_qt/build
+-DITK_FFTIMAGEFILTERINIT_FACTORY_REGISTER_MANAGER
+-DITK_IMAGEIO_FACTORY_REGISTER_MANAGER
+-DITK_MESHIO_FACTORY_REGISTER_MANAGER
+-DITK_TRANSFORMIO_FACTORY_REGISTER_MANAGER
+-o
+/home/robinson/proyecto_interciclo_cpp/gui_qt/build/src/moc_mainwindow.cpp
+/home/robinson/proyecto_interciclo_cpp/gui_qt/src/mainwindow.h

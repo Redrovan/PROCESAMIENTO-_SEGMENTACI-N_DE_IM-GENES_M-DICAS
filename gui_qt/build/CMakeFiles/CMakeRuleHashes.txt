@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+12c7b661b523539aa8b980658d40a5e8 src/moc_mainwindow.cpp
+32574e0aa9514223111035e3a33010b3 src/moc_opencv_bridge.cpp
+75ee05249fa7520a05c82c7f254b271f ui_mainwindow.h

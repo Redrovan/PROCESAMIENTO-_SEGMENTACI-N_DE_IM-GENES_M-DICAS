@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>850</height>
+   </rect>
+  </property>
+
+  <property name="windowTitle">
+   <string>Procesamiento de Imágenes CT - Interciclo</string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="mainLayout">
+
+    <item>
+     <widget class="QFrame" name="leftPanel">
+      <property name="minimumWidth">
+       <number>260</number>
+      </property>
+
+      <layout class="QVBoxLayout" name="leftLayout">
+
+       <!-- Botón: Seleccionar imagen -->
+       <item>
+        <widget class="QPushButton" name="btnSelectImage">
+         <property name="text">
+          <string> Seleccionar imagen CT </string>
+         </property>
+         <property name="minimumHeight">
+          <number>40</number>
+         </property>
+        </widget>
+       </item>
+
+       <!-- Botón: Procesar -->
+       <item>
+        <widget class="QPushButton" name="btnProcess">
+         <property name="text">
+          <string> Procesar imagen</string>
+         </property>
+         <property name="minimumHeight">
+          <number>40</number>
+         </property>
+        </widget>
+       </item>
+
+
+       <item>
+        <widget class="QGroupBox" name="groupFilters">
+         <property name="title">
+          <string>Filtros de preprocesamiento</string>
+         </property>
+
+         <layout class="QVBoxLayout" name="filtersLayout">
+
+          <!--  DN-CNN ONNX-->
+          <item>
+           <widget class="QCheckBox" name="chkDnCNN">
+            <property name="text">
+             <string>Filtro Deep Learning DN-CNN (ONNX)</string>
+            </property>
+           </widget>
+          </item>
+
+          <!-- Filtros clásicos -->
+          <item>
+           <widget class="QCheckBox" name="chkGaussian">
+            <property name="text">
+             <string>Gaussian Blur</string>
+            </property>
+           </widget>
+          </item>
+
+          <item>
+           <widget class="QCheckBox" name="chkCLAHE">
+            <property name="text">
+             <string>CLAHE</string>
+            </property>
+           </widget>
+          </item>
+
+          <item>
+           <widget class="QCheckBox" name="chkEqualize">
+            <property name="text">
+             <string>Equalize Histograma</string>
+            </property>
+           </widget>
+          </item>
+
+          <item>
+           <widget class="QCheckBox" name="chkSobel">
+            <property name="text">
+             <string>Sobel (bordes)</string>
+            </property>
+           </widget>
+          </item>
+
+          <item>
+           <widget class="QCheckBox" name="chkCanny">
+            <property name="text">
+             <string>Canny (bordes)</string>
+            </property>
+           </widget>
+          </item>
+
+          <!-- Filtro avanzado -->
+          <item>
+           <widget class="QCheckBox" name="chkDeepFGS">
+            <property name="text">
+             <string>Filtro Profundo FGS (técnica avanzada)</string>
+            </property>
+           </widget>
+          </item>
+
+         </layout>
+        </widget>
+       </item>
+
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </spacer>
+       </item>
+
+      </layout>
+     </widget>
+    </item>
+
+    <!-- ========================= PANEL DERECHO ========================= -->
+    <item>
+     <widget class="QFrame" name="rightPanel">
+      <layout class="QGridLayout" name="gridImages">
+
+       <!-- Imagen Original -->
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="boxOriginal">
+         <property name="title"><string>Imagen Original</string></property>
+
+         <layout class="QVBoxLayout">
+          <item>
+           <widget class="QLabel" name="lblOriginal">
+            <property name="minimumSize">
+             <size><width>350</width><height>250</height></size>
+            </property>
+            <property name="scaledContents"><bool>true</bool></property>
+            <property name="styleSheet">
+             <string>background-color:#222; border:1px solid #555;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+
+       <!-- Preprocesamiento -->
+       <item row="0" column="1">
+        <widget class="QGroupBox" name="boxPre">
+         <property name="title"><string>Preprocesamiento</string></property>
+
+         <layout class="QVBoxLayout">
+          <item>
+           <widget class="QLabel" name="lblPre">
+            <property name="minimumSize">
+             <size><width>350</width><height>250</height></size>
+            </property>
+            <property name="scaledContents"><bool>true</bool></property>
+            <property name="styleSheet">
+             <string>background-color:#222; border:1px solid #555;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+
+       <!-- Pulmones -->
+       <item row="1" column="0">
+        <widget class="QGroupBox" name="boxLungs">
+         <property name="title"><string>Segmentación - Pulmones</string></property>
+
+         <layout class="QVBoxLayout">
+          <item><widget class="QLabel" name="lblLungs"/></item>
+         </layout>
+        </widget>
+       </item>
+
+       <!-- Corazón -->
+       <item row="1" column="1">
+        <widget class="QGroupBox" name="boxHeart">
+         <property name="title"><string>Segmentación - Corazón</string></property>
+
+         <layout class="QVBoxLayout">
+          <item><widget class="QLabel" name="lblHeart"/></item>
+         </layout>
+        </widget>
+       </item>
+
+       <!-- Huesos -->
+       <item row="2" column="0">
+        <widget class="QGroupBox" name="boxBones">
+         <property name="title"><string>Segmentación - Huesos</string></property>
+
+         <layout class="QVBoxLayout">
+          <item><widget class="QLabel" name="lblBones"/></item>
+         </layout>
+        </widget>
+       </item>
+
+       <!-- Imagen Final -->
+       <item row="2" column="1">
+        <widget class="QGroupBox" name="boxFinal">
+         <property name="title"><string>Imagen Final Resaltada</string></property>
+
+         <layout class="QVBoxLayout">
+          <item><widget class="QLabel" name="lblFinal"/></item>
+         </layout>
+        </widget>
+       </item>
+
+      </layout>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+
+  <!-- Barra inferior -->
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+
+ <resources/>
+ <connections/>
+
+</ui>

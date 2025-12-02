@@ -1,0 +1,38 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+
+                // OpenCV
+                "/usr/local/include/opencv4",
+                "/usr/local/include/opencv4",
+
+                // ITK
+                "/usr/include/ITK-5.3",
+
+                // Qt5
+                "/usr/include/x86_64-linux-gnu/qt5",
+                "/usr/include/x86_64-linux-gnu/qt5/QtCore",
+                "/usr/include/x86_64-linux-gnu/qt5/QtGui",
+                "/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
+
+                // Tu proyecto (núcleo del pipeline)
+                "/home/robinson/proyecto_interciclo_cpp/src",
+
+                // Archivos generados por Qt (ui_mainwindow.h)
+                "/home/robinson/proyecto_interciclo_cpp/gui_qt/build",
+
+                // Código de la GUI
+                "/home/robinson/proyecto_interciclo_cpp/gui_qt/src"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

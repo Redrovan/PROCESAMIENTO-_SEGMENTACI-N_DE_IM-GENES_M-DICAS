@@ -1,0 +1,3 @@
+/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles/gui_interciclo.dir
+/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles/edit_cache.dir
+/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles/rebuild_cache.dir
