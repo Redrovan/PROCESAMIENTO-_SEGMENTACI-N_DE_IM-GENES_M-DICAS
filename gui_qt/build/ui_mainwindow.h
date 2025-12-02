@@ -44,6 +44,12 @@ public:
     QCheckBox *chkSobel;
     QCheckBox *chkCanny;
     QCheckBox *chkDeepFGS;
+    QGroupBox *boxLogicOps;
+    QGridLayout *logicGrid;
+    QLabel *lblNot;
+    QLabel *lblAnd;
+    QLabel *lblOr;
+    QLabel *lblXor;
     QSpacerItem *verticalSpacer;
     QFrame *rightPanel;
     QGridLayout *gridImages;
@@ -71,25 +77,22 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(1400, 850);
+        MainWindow->resize(1400, 925);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         mainLayout = new QHBoxLayout(centralwidget);
         mainLayout->setObjectName(QString::fromUtf8("mainLayout"));
         leftPanel = new QFrame(centralwidget);
         leftPanel->setObjectName(QString::fromUtf8("leftPanel"));
-        leftPanel->setMinimumWidth(260);
         leftLayout = new QVBoxLayout(leftPanel);
         leftLayout->setObjectName(QString::fromUtf8("leftLayout"));
         btnSelectImage = new QPushButton(leftPanel);
         btnSelectImage->setObjectName(QString::fromUtf8("btnSelectImage"));
-        btnSelectImage->setMinimumHeight(40);
 
         leftLayout->addWidget(btnSelectImage);
 
         btnProcess = new QPushButton(leftPanel);
         btnProcess->setObjectName(QString::fromUtf8("btnProcess"));
-        btnProcess->setMinimumHeight(40);
 
         leftLayout->addWidget(btnProcess);
 
@@ -134,6 +137,41 @@ public:
 
 
         leftLayout->addWidget(groupFilters);
+
+        boxLogicOps = new QGroupBox(leftPanel);
+        boxLogicOps->setObjectName(QString::fromUtf8("boxLogicOps"));
+        logicGrid = new QGridLayout(boxLogicOps);
+        logicGrid->setObjectName(QString::fromUtf8("logicGrid"));
+        lblNot = new QLabel(boxLogicOps);
+        lblNot->setObjectName(QString::fromUtf8("lblNot"));
+        lblNot->setMinimumSize(QSize(300, 200));
+        lblNot->setScaledContents(true);
+
+        logicGrid->addWidget(lblNot, 0, 0, 1, 1);
+
+        lblAnd = new QLabel(boxLogicOps);
+        lblAnd->setObjectName(QString::fromUtf8("lblAnd"));
+        lblAnd->setMinimumSize(QSize(300, 200));
+        lblAnd->setScaledContents(true);
+
+        logicGrid->addWidget(lblAnd, 0, 1, 1, 1);
+
+        lblOr = new QLabel(boxLogicOps);
+        lblOr->setObjectName(QString::fromUtf8("lblOr"));
+        lblOr->setMinimumSize(QSize(300, 200));
+        lblOr->setScaledContents(true);
+
+        logicGrid->addWidget(lblOr, 1, 0, 1, 1);
+
+        lblXor = new QLabel(boxLogicOps);
+        lblXor->setObjectName(QString::fromUtf8("lblXor"));
+        lblXor->setMinimumSize(QSize(300, 200));
+        lblXor->setScaledContents(true);
+
+        logicGrid->addWidget(lblXor, 1, 1, 1, 1);
+
+
+        leftLayout->addWidget(boxLogicOps);
 
         verticalSpacer = new QSpacerItem(0, 0, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
@@ -238,8 +276,8 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Procesamiento de Im\303\241genes CT - Interciclo", nullptr));
-        btnSelectImage->setText(QCoreApplication::translate("MainWindow", " Seleccionar imagen CT ", nullptr));
-        btnProcess->setText(QCoreApplication::translate("MainWindow", " Procesar imagen", nullptr));
+        btnSelectImage->setText(QCoreApplication::translate("MainWindow", "Seleccionar imagen CT", nullptr));
+        btnProcess->setText(QCoreApplication::translate("MainWindow", "Procesar imagen", nullptr));
         groupFilters->setTitle(QCoreApplication::translate("MainWindow", "Filtros de preprocesamiento", nullptr));
         chkDnCNN->setText(QCoreApplication::translate("MainWindow", "Filtro Deep Learning DN-CNN (ONNX)", nullptr));
         chkGaussian->setText(QCoreApplication::translate("MainWindow", "Gaussian Blur", nullptr));
@@ -248,10 +286,15 @@ public:
         chkSobel->setText(QCoreApplication::translate("MainWindow", "Sobel (bordes)", nullptr));
         chkCanny->setText(QCoreApplication::translate("MainWindow", "Canny (bordes)", nullptr));
         chkDeepFGS->setText(QCoreApplication::translate("MainWindow", "Filtro Profundo FGS (t\303\251cnica avanzada)", nullptr));
+        boxLogicOps->setTitle(QCoreApplication::translate("MainWindow", "Operaciones L\303\263gicas (NOT / AND / OR / XOR)", nullptr));
+        lblNot->setStyleSheet(QCoreApplication::translate("MainWindow", "background:#222;border:1px solid #555;", nullptr));
+        lblAnd->setStyleSheet(QCoreApplication::translate("MainWindow", "background:#222;border:1px solid #555;", nullptr));
+        lblOr->setStyleSheet(QCoreApplication::translate("MainWindow", "background:#222;border:1px solid #555;", nullptr));
+        lblXor->setStyleSheet(QCoreApplication::translate("MainWindow", "background:#222;border:1px solid #555;", nullptr));
         boxOriginal->setTitle(QCoreApplication::translate("MainWindow", "Imagen Original", nullptr));
-        lblOriginal->setStyleSheet(QCoreApplication::translate("MainWindow", "background-color:#222; border:1px solid #555;", nullptr));
+        lblOriginal->setStyleSheet(QCoreApplication::translate("MainWindow", "background:#222;border:1px solid #555;", nullptr));
         boxPre->setTitle(QCoreApplication::translate("MainWindow", "Preprocesamiento", nullptr));
-        lblPre->setStyleSheet(QCoreApplication::translate("MainWindow", "background-color:#222; border:1px solid #555;", nullptr));
+        lblPre->setStyleSheet(QCoreApplication::translate("MainWindow", "background:#222;border:1px solid #555;", nullptr));
         boxLungs->setTitle(QCoreApplication::translate("MainWindow", "Segmentaci\303\263n - Pulmones", nullptr));
         boxHeart->setTitle(QCoreApplication::translate("MainWindow", "Segmentaci\303\263n - Coraz\303\263n", nullptr));
         boxBones->setTitle(QCoreApplication::translate("MainWindow", "Segmentaci\303\263n - Huesos", nullptr));

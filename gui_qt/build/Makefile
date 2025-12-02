@@ -201,6 +201,30 @@ home/robinson/proyecto_interciclo_cpp/src/itk_loader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_interciclo.dir/build.make CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/itk_loader.cpp.s
 .PHONY : home/robinson/proyecto_interciclo_cpp/src/itk_loader.cpp.s
 
+home/robinson/proyecto_interciclo_cpp/src/logic_ops.o: home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.o
+.PHONY : home/robinson/proyecto_interciclo_cpp/src/logic_ops.o
+
+# target to build an object file
+home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_interciclo.dir/build.make CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.o
+.PHONY : home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.o
+
+home/robinson/proyecto_interciclo_cpp/src/logic_ops.i: home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.i
+.PHONY : home/robinson/proyecto_interciclo_cpp/src/logic_ops.i
+
+# target to preprocess a source file
+home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_interciclo.dir/build.make CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.i
+.PHONY : home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.i
+
+home/robinson/proyecto_interciclo_cpp/src/logic_ops.s: home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.s
+.PHONY : home/robinson/proyecto_interciclo_cpp/src/logic_ops.s
+
+# target to generate assembly for a file
+home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_interciclo.dir/build.make CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.s
+.PHONY : home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.s
+
 home/robinson/proyecto_interciclo_cpp/src/metrics.o: home/robinson/proyecto_interciclo_cpp/src/metrics.cpp.o
 .PHONY : home/robinson/proyecto_interciclo_cpp/src/metrics.o
 
@@ -459,6 +483,9 @@ help:
 	@echo "... home/robinson/proyecto_interciclo_cpp/src/itk_loader.o"
 	@echo "... home/robinson/proyecto_interciclo_cpp/src/itk_loader.i"
 	@echo "... home/robinson/proyecto_interciclo_cpp/src/itk_loader.s"
+	@echo "... home/robinson/proyecto_interciclo_cpp/src/logic_ops.o"
+	@echo "... home/robinson/proyecto_interciclo_cpp/src/logic_ops.i"
+	@echo "... home/robinson/proyecto_interciclo_cpp/src/logic_ops.s"
 	@echo "... home/robinson/proyecto_interciclo_cpp/src/metrics.o"
 	@echo "... home/robinson/proyecto_interciclo_cpp/src/metrics.i"
 	@echo "... home/robinson/proyecto_interciclo_cpp/src/metrics.s"

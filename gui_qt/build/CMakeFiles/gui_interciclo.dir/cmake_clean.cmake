@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/deep_denoise.cpp.o.d"
   "CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/itk_loader.cpp.o"
   "CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/itk_loader.cpp.o.d"
+  "CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.o"
+  "CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.o.d"
   "CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/metrics.cpp.o"
   "CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/metrics.cpp.o.d"
   "CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/morphology.cpp.o"

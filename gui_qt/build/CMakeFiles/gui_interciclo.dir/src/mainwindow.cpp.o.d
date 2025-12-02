@@ -289,12 +289,6 @@ CMakeFiles/gui_interciclo.dir/src/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/QImage \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
  /usr/local/include/opencv4/opencv2/opencv.hpp \
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/local/include/opencv4/opencv2/core.hpp \
@@ -519,6 +513,8 @@ CMakeFiles/gui_interciclo.dir/src/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
  /home/robinson/proyecto_interciclo_cpp/gui_qt/src/opencv_bridge.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QImage \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h \
  /home/robinson/proyecto_interciclo_cpp/gui_qt/../src/itk_loader.h \
  /home/robinson/proyecto_interciclo_cpp/gui_qt/../src/preprocessing.h \
  /home/robinson/proyecto_interciclo_cpp/gui_qt/../src/segmentation.h \
@@ -526,4 +522,5 @@ CMakeFiles/gui_interciclo.dir/src/mainwindow.cpp.o: \
  /home/robinson/proyecto_interciclo_cpp/gui_qt/../src/contours.h \
  /home/robinson/proyecto_interciclo_cpp/gui_qt/../src/utils.h \
  /home/robinson/proyecto_interciclo_cpp/gui_qt/../src/deep_denoise.h \
+ /home/robinson/proyecto_interciclo_cpp/gui_qt/../src/logic_ops.h \
  /home/robinson/proyecto_interciclo_cpp/gui_qt/../src/metrics.h
