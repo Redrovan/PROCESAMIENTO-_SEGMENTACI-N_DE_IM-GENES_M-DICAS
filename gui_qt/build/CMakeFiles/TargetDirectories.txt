@@ -1,3 +1,5 @@
 /home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles/gui_interciclo.dir
 /home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles/edit_cache.dir
 /home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles/rebuild_cache.dir
+/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles/gui_interciclo_autogen_timestamp_deps.dir
+/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles/gui_interciclo_autogen.dir

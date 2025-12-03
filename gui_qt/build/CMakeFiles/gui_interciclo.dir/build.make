@@ -81,10 +81,31 @@ ui_mainwindow.h: /home/robinson/proyecto_interciclo_cpp/gui_qt/src/mainwindow.ui
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating ui_mainwindow.h"
 	/usr/lib/qt5/bin/uic -o /home/robinson/proyecto_interciclo_cpp/gui_qt/build/ui_mainwindow.h /home/robinson/proyecto_interciclo_cpp/gui_qt/src/mainwindow.ui
 
+gui_interciclo_autogen/timestamp: /usr/lib/qt5/bin/moc
+gui_interciclo_autogen/timestamp: /usr/lib/qt5/bin/uic
+gui_interciclo_autogen/timestamp: CMakeFiles/gui_interciclo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Automatic MOC and UIC for target gui_interciclo"
+	/usr/bin/cmake -E cmake_autogen /home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles/gui_interciclo_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E touch /home/robinson/proyecto_interciclo_cpp/gui_qt/build/gui_interciclo_autogen/timestamp
+
+CMakeFiles/gui_interciclo.dir/gui_interciclo_autogen/mocs_compilation.cpp.o: CMakeFiles/gui_interciclo.dir/flags.make
+CMakeFiles/gui_interciclo.dir/gui_interciclo_autogen/mocs_compilation.cpp.o: gui_interciclo_autogen/mocs_compilation.cpp
+CMakeFiles/gui_interciclo.dir/gui_interciclo_autogen/mocs_compilation.cpp.o: CMakeFiles/gui_interciclo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gui_interciclo.dir/gui_interciclo_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gui_interciclo.dir/gui_interciclo_autogen/mocs_compilation.cpp.o -MF CMakeFiles/gui_interciclo.dir/gui_interciclo_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/gui_interciclo.dir/gui_interciclo_autogen/mocs_compilation.cpp.o -c /home/robinson/proyecto_interciclo_cpp/gui_qt/build/gui_interciclo_autogen/mocs_compilation.cpp
+
+CMakeFiles/gui_interciclo.dir/gui_interciclo_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gui_interciclo.dir/gui_interciclo_autogen/mocs_compilation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robinson/proyecto_interciclo_cpp/gui_qt/build/gui_interciclo_autogen/mocs_compilation.cpp > CMakeFiles/gui_interciclo.dir/gui_interciclo_autogen/mocs_compilation.cpp.i
+
+CMakeFiles/gui_interciclo.dir/gui_interciclo_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gui_interciclo.dir/gui_interciclo_autogen/mocs_compilation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robinson/proyecto_interciclo_cpp/gui_qt/build/gui_interciclo_autogen/mocs_compilation.cpp -o CMakeFiles/gui_interciclo.dir/gui_interciclo_autogen/mocs_compilation.cpp.s
+
 CMakeFiles/gui_interciclo.dir/src/main.cpp.o: CMakeFiles/gui_interciclo.dir/flags.make
 CMakeFiles/gui_interciclo.dir/src/main.cpp.o: /home/robinson/proyecto_interciclo_cpp/gui_qt/src/main.cpp
 CMakeFiles/gui_interciclo.dir/src/main.cpp.o: CMakeFiles/gui_interciclo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gui_interciclo.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gui_interciclo.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gui_interciclo.dir/src/main.cpp.o -MF CMakeFiles/gui_interciclo.dir/src/main.cpp.o.d -o CMakeFiles/gui_interciclo.dir/src/main.cpp.o -c /home/robinson/proyecto_interciclo_cpp/gui_qt/src/main.cpp
 
 CMakeFiles/gui_interciclo.dir/src/main.cpp.i: cmake_force
@@ -98,7 +119,7 @@ CMakeFiles/gui_interciclo.dir/src/main.cpp.s: cmake_force
 CMakeFiles/gui_interciclo.dir/src/mainwindow.cpp.o: CMakeFiles/gui_interciclo.dir/flags.make
 CMakeFiles/gui_interciclo.dir/src/mainwindow.cpp.o: /home/robinson/proyecto_interciclo_cpp/gui_qt/src/mainwindow.cpp
 CMakeFiles/gui_interciclo.dir/src/mainwindow.cpp.o: CMakeFiles/gui_interciclo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gui_interciclo.dir/src/mainwindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gui_interciclo.dir/src/mainwindow.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gui_interciclo.dir/src/mainwindow.cpp.o -MF CMakeFiles/gui_interciclo.dir/src/mainwindow.cpp.o.d -o CMakeFiles/gui_interciclo.dir/src/mainwindow.cpp.o -c /home/robinson/proyecto_interciclo_cpp/gui_qt/src/mainwindow.cpp
 
 CMakeFiles/gui_interciclo.dir/src/mainwindow.cpp.i: cmake_force
@@ -112,7 +133,7 @@ CMakeFiles/gui_interciclo.dir/src/mainwindow.cpp.s: cmake_force
 CMakeFiles/gui_interciclo.dir/src/opencv_bridge.cpp.o: CMakeFiles/gui_interciclo.dir/flags.make
 CMakeFiles/gui_interciclo.dir/src/opencv_bridge.cpp.o: /home/robinson/proyecto_interciclo_cpp/gui_qt/src/opencv_bridge.cpp
 CMakeFiles/gui_interciclo.dir/src/opencv_bridge.cpp.o: CMakeFiles/gui_interciclo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gui_interciclo.dir/src/opencv_bridge.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gui_interciclo.dir/src/opencv_bridge.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gui_interciclo.dir/src/opencv_bridge.cpp.o -MF CMakeFiles/gui_interciclo.dir/src/opencv_bridge.cpp.o.d -o CMakeFiles/gui_interciclo.dir/src/opencv_bridge.cpp.o -c /home/robinson/proyecto_interciclo_cpp/gui_qt/src/opencv_bridge.cpp
 
 CMakeFiles/gui_interciclo.dir/src/opencv_bridge.cpp.i: cmake_force
@@ -126,7 +147,7 @@ CMakeFiles/gui_interciclo.dir/src/opencv_bridge.cpp.s: cmake_force
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/itk_loader.cpp.o: CMakeFiles/gui_interciclo.dir/flags.make
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/itk_loader.cpp.o: /home/robinson/proyecto_interciclo_cpp/src/itk_loader.cpp
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/itk_loader.cpp.o: CMakeFiles/gui_interciclo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/itk_loader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/itk_loader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/itk_loader.cpp.o -MF CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/itk_loader.cpp.o.d -o CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/itk_loader.cpp.o -c /home/robinson/proyecto_interciclo_cpp/src/itk_loader.cpp
 
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/itk_loader.cpp.i: cmake_force
@@ -140,7 +161,7 @@ CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/itk_load
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/preprocessing.cpp.o: CMakeFiles/gui_interciclo.dir/flags.make
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/preprocessing.cpp.o: /home/robinson/proyecto_interciclo_cpp/src/preprocessing.cpp
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/preprocessing.cpp.o: CMakeFiles/gui_interciclo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/preprocessing.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/preprocessing.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/preprocessing.cpp.o -MF CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/preprocessing.cpp.o.d -o CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/preprocessing.cpp.o -c /home/robinson/proyecto_interciclo_cpp/src/preprocessing.cpp
 
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/preprocessing.cpp.i: cmake_force
@@ -154,7 +175,7 @@ CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/preproce
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/segmentation.cpp.o: CMakeFiles/gui_interciclo.dir/flags.make
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/segmentation.cpp.o: /home/robinson/proyecto_interciclo_cpp/src/segmentation.cpp
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/segmentation.cpp.o: CMakeFiles/gui_interciclo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/segmentation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/segmentation.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/segmentation.cpp.o -MF CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/segmentation.cpp.o.d -o CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/segmentation.cpp.o -c /home/robinson/proyecto_interciclo_cpp/src/segmentation.cpp
 
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/segmentation.cpp.i: cmake_force
@@ -168,7 +189,7 @@ CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/segmenta
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/morphology.cpp.o: CMakeFiles/gui_interciclo.dir/flags.make
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/morphology.cpp.o: /home/robinson/proyecto_interciclo_cpp/src/morphology.cpp
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/morphology.cpp.o: CMakeFiles/gui_interciclo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/morphology.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/morphology.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/morphology.cpp.o -MF CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/morphology.cpp.o.d -o CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/morphology.cpp.o -c /home/robinson/proyecto_interciclo_cpp/src/morphology.cpp
 
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/morphology.cpp.i: cmake_force
@@ -182,7 +203,7 @@ CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/morpholo
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/contours.cpp.o: CMakeFiles/gui_interciclo.dir/flags.make
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/contours.cpp.o: /home/robinson/proyecto_interciclo_cpp/src/contours.cpp
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/contours.cpp.o: CMakeFiles/gui_interciclo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/contours.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/contours.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/contours.cpp.o -MF CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/contours.cpp.o.d -o CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/contours.cpp.o -c /home/robinson/proyecto_interciclo_cpp/src/contours.cpp
 
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/contours.cpp.i: cmake_force
@@ -196,7 +217,7 @@ CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/contours
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/utils.cpp.o: CMakeFiles/gui_interciclo.dir/flags.make
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/utils.cpp.o: /home/robinson/proyecto_interciclo_cpp/src/utils.cpp
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/utils.cpp.o: CMakeFiles/gui_interciclo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/utils.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/utils.cpp.o -MF CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/utils.cpp.o.d -o CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/utils.cpp.o -c /home/robinson/proyecto_interciclo_cpp/src/utils.cpp
 
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/utils.cpp.i: cmake_force
@@ -210,7 +231,7 @@ CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/utils.cp
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/deep_denoise.cpp.o: CMakeFiles/gui_interciclo.dir/flags.make
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/deep_denoise.cpp.o: /home/robinson/proyecto_interciclo_cpp/src/deep_denoise.cpp
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/deep_denoise.cpp.o: CMakeFiles/gui_interciclo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/deep_denoise.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/deep_denoise.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/deep_denoise.cpp.o -MF CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/deep_denoise.cpp.o.d -o CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/deep_denoise.cpp.o -c /home/robinson/proyecto_interciclo_cpp/src/deep_denoise.cpp
 
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/deep_denoise.cpp.i: cmake_force
@@ -224,7 +245,7 @@ CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/deep_den
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/metrics.cpp.o: CMakeFiles/gui_interciclo.dir/flags.make
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/metrics.cpp.o: /home/robinson/proyecto_interciclo_cpp/src/metrics.cpp
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/metrics.cpp.o: CMakeFiles/gui_interciclo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/metrics.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/metrics.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/metrics.cpp.o -MF CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/metrics.cpp.o.d -o CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/metrics.cpp.o -c /home/robinson/proyecto_interciclo_cpp/src/metrics.cpp
 
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/metrics.cpp.i: cmake_force
@@ -238,7 +259,7 @@ CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/metrics.
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.o: CMakeFiles/gui_interciclo.dir/flags.make
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.o: /home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.o: CMakeFiles/gui_interciclo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.o -MF CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.o.d -o CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.o -c /home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp
 
 CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/logic_ops.cpp.i: cmake_force
@@ -252,7 +273,7 @@ CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/logic_op
 CMakeFiles/gui_interciclo.dir/src/moc_mainwindow.cpp.o: CMakeFiles/gui_interciclo.dir/flags.make
 CMakeFiles/gui_interciclo.dir/src/moc_mainwindow.cpp.o: src/moc_mainwindow.cpp
 CMakeFiles/gui_interciclo.dir/src/moc_mainwindow.cpp.o: CMakeFiles/gui_interciclo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/gui_interciclo.dir/src/moc_mainwindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/gui_interciclo.dir/src/moc_mainwindow.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gui_interciclo.dir/src/moc_mainwindow.cpp.o -MF CMakeFiles/gui_interciclo.dir/src/moc_mainwindow.cpp.o.d -o CMakeFiles/gui_interciclo.dir/src/moc_mainwindow.cpp.o -c /home/robinson/proyecto_interciclo_cpp/gui_qt/build/src/moc_mainwindow.cpp
 
 CMakeFiles/gui_interciclo.dir/src/moc_mainwindow.cpp.i: cmake_force
@@ -266,7 +287,7 @@ CMakeFiles/gui_interciclo.dir/src/moc_mainwindow.cpp.s: cmake_force
 CMakeFiles/gui_interciclo.dir/src/moc_opencv_bridge.cpp.o: CMakeFiles/gui_interciclo.dir/flags.make
 CMakeFiles/gui_interciclo.dir/src/moc_opencv_bridge.cpp.o: src/moc_opencv_bridge.cpp
 CMakeFiles/gui_interciclo.dir/src/moc_opencv_bridge.cpp.o: CMakeFiles/gui_interciclo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/gui_interciclo.dir/src/moc_opencv_bridge.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/gui_interciclo.dir/src/moc_opencv_bridge.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gui_interciclo.dir/src/moc_opencv_bridge.cpp.o -MF CMakeFiles/gui_interciclo.dir/src/moc_opencv_bridge.cpp.o.d -o CMakeFiles/gui_interciclo.dir/src/moc_opencv_bridge.cpp.o -c /home/robinson/proyecto_interciclo_cpp/gui_qt/build/src/moc_opencv_bridge.cpp
 
 CMakeFiles/gui_interciclo.dir/src/moc_opencv_bridge.cpp.i: cmake_force
@@ -279,6 +300,7 @@ CMakeFiles/gui_interciclo.dir/src/moc_opencv_bridge.cpp.s: cmake_force
 
 # Object files for target gui_interciclo
 gui_interciclo_OBJECTS = \
+"CMakeFiles/gui_interciclo.dir/gui_interciclo_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/gui_interciclo.dir/src/main.cpp.o" \
 "CMakeFiles/gui_interciclo.dir/src/mainwindow.cpp.o" \
 "CMakeFiles/gui_interciclo.dir/src/opencv_bridge.cpp.o" \
@@ -297,6 +319,7 @@ gui_interciclo_OBJECTS = \
 # External object files for target gui_interciclo
 gui_interciclo_EXTERNAL_OBJECTS =
 
+gui_interciclo: CMakeFiles/gui_interciclo.dir/gui_interciclo_autogen/mocs_compilation.cpp.o
 gui_interciclo: CMakeFiles/gui_interciclo.dir/src/main.cpp.o
 gui_interciclo: CMakeFiles/gui_interciclo.dir/src/mainwindow.cpp.o
 gui_interciclo: CMakeFiles/gui_interciclo.dir/src/opencv_bridge.cpp.o
@@ -501,7 +524,7 @@ gui_interciclo: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-9.1.so.9.1.0
 gui_interciclo: /usr/lib/x86_64-linux-gnu/libtbb.so.12.11
 gui_interciclo: /usr/lib/x86_64-linux-gnu/libvtksys-9.1.so.9.1.0
 gui_interciclo: CMakeFiles/gui_interciclo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable gui_interciclo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/robinson/proyecto_interciclo_cpp/gui_qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable gui_interciclo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gui_interciclo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -512,6 +535,7 @@ CMakeFiles/gui_interciclo.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/gui_interciclo.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/gui_interciclo.dir/clean
 
+CMakeFiles/gui_interciclo.dir/depend: gui_interciclo_autogen/timestamp
 CMakeFiles/gui_interciclo.dir/depend: src/moc_mainwindow.cpp
 CMakeFiles/gui_interciclo.dir/depend: src/moc_opencv_bridge.cpp
 CMakeFiles/gui_interciclo.dir/depend: ui_mainwindow.h

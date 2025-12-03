@@ -1,4 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/gui_interciclo_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/gui_interciclo_autogen.dir/ParseCache.txt"
+  "gui_interciclo_autogen"
+  "CMakeFiles/gui_interciclo.dir/gui_interciclo_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/gui_interciclo.dir/gui_interciclo_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/contours.cpp.o"
   "CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/contours.cpp.o.d"
   "CMakeFiles/gui_interciclo.dir/home/robinson/proyecto_interciclo_cpp/src/deep_denoise.cpp.o"
@@ -29,6 +34,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gui_interciclo.dir/src/opencv_bridge.cpp.o.d"
   "gui_interciclo"
   "gui_interciclo.pdb"
+  "gui_interciclo_autogen/mocs_compilation.cpp"
+  "gui_interciclo_autogen/timestamp"
   "src/moc_mainwindow.cpp"
   "src/moc_opencv_bridge.cpp"
   "ui_mainwindow.h"
